@@ -7,3 +7,10 @@ permalink: /browse.html
 ---
 
 ## Browse Items
+field,display_name,btn,hidden,sort_name
+date,Date,,,Date Created
+description,,,,
+creator,Creator,,,
+subject,,true
+location,,true
+identifier,,,true,Identifier

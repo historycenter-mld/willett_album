@@ -8,20 +8,8 @@ credits: true
 # Look in _includes/feature for options to easily add features to the page
 ---
 
-{% include feature/jumbotron.html objectid="https://cdil.lib.uidaho.edu/images/palouse_sm.jpg" %}
+{% include feature/jumbotron.html objectid="https://mldhistory.github.io/willett_album/item.html?id=col003_115" %}
 
-{% include feature/nav-menu.html sections="About the Collection;About the About Page" %}
+## About the Willett Album
 
-## About the Collection
-
-This site is generated using [CollectionBuilder-GH](https://collectionbuilding.github.io/gh/), a project to create a free and simple digital collection using [GitHub Pages](https://pages.github.com/) from: 
-
-- a CSV of collection metadata
-- a folder of JPG images or PDF documents
-
-The template repository features four objects from the University of Idaho Library's [Digital Collections](https://www.lib.uidaho.edu/digital). 
-
-For full details of creating your own collection site, visit [CollectionBuilder Documentation](https://collectionbuilder.github.io/cb-docs/)!
-
-<!-- IMPORTANT!!! DELETE this comment and the include below when you are finished editing this page for your collection. The include below introduces about page features. They will show up on your collection's about page until you delete it.  -->
-{% include cb/about_the_about.md %} 
+The Willett Family traveled from Bridgewater, Massachusettes to Meridian, Idaho in 1921 to visit their daughter, Hazel, who was a teacher at Meridian High School. Their journey was unique in that they traveled cross-country by automobile, in a time where automobiles were still not completely mainstream. Even more interesting is the fact that Mr. Willett modified the automobile into an "auto bungalow" - complete with fold-out tents and cots for sleeping. We consider this one of the country's first recreational vehicles. Enjoy the images!

@@ -12,7 +12,7 @@ credits: true
 {% include feature/nav-menu.html sections="About the Willett Album;The Willett Family;Origins of the Album" %}
 
 ## About the Willett Album
-The Willett Family traveled from Bridgewater, Massachusettes to Meridian, Idaho in 1921 to visit their daughter, Hazel. Their six-week journey was unique in that they traveled cross-country by automobile in a time when automobiles were still not completely mainstream. Even more interesting is the fact that Mr. Willett modified the automobile into an "auto bungalow" - complete with fold-out tents and cots for sleeping. While "auto bungalows" were not completely unheard of at the time, we consider this to be one of the country's first recreational vehicles. 
+The Willett Family traveled from Bridgewater, Massachusettes to Meridian, Idaho in 1921 to visit their daughter, Hazel. Their six-week journey was unique in that they traveled cross-country by automobile in a time when automobiles were not completely mainstream. Even more interesting is the fact that Mr. Willett converted the Ford automobile into an "auto bungalow" - complete with fold-out tents and cots for sleeping. We consider the Willett "auto bungalow" to be one of the country's first recreational vehicles. 
 
 Please note that the images in the album are not in sequential order. The order of the images in 'browse' mode is the exact order they were in the album.
 ## The Willett Family

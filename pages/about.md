@@ -7,7 +7,7 @@ credits: true
 # Edit the markdown on in this file to describe your collection
 # Look in _includes/feature for options to easily add features to the page
 ---
-{% include feature/jumbotron.html objectid="col003_p115" %}
+{% include feature/jumbotron.html objectid="https://mldhistory.github.io/willett_album/objects/col003_p115.jpg" %}
 
 {% include feature/nav-menu.html sections="About the Willett Album;The Willett Family;Origins of the Album" %}
 

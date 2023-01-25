@@ -19,3 +19,4 @@ Please note that the images in the album are not in sequential order. The order 
 The Willett Family consisted of Mr. and Mrs. C.M. Willet, their son (Fred) and famly friend, Wendell Fisher. Their daughter, Hazel, taught at Meridian High School. Other members of the Willett family resided in Coggon, Iowa. The Willett's also brought their dog, cat and several chickens to ensure an ample supply of breakfast eggs!
 ## Origins of the Album
 The album was purchased by a couple from an antique store in Massachusettes. It was purchased for a $8.00 and donated to the Meridian Library.
+{% include feature/image.html objectid="https://mldhistory.github.io/willett_album/assets/img/willett_smith3.jpg" width="75" %}

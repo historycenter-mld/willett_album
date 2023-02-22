@@ -20,3 +20,5 @@ The Willett Family consisted of Mr. and Mrs. C.M. Willet, their son (Fred) and f
 ## Origins of the Album
 The album was purchased by a couple from an antique store in Massachusettes. It was purchased for a $8.00 and donated to the Meridian Library.
 {% include feature/image.html objectid="https://mldhistory.github.io/willett_album/assets/img/willett_smith3.jpg" width="75" %}
+
+This project was made possible by a SHARP Operations Grant, funded by the Idaho Humanities Council and National Endowment for the Humanities.

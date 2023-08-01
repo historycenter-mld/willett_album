@@ -16,29 +16,28 @@
     - "max" - max number of terms to display if auto generating (optional, default 5)
     - "btn-color" - a bootstrap color class to theme the buttons. Can be any bootstrap template color (e.g. info, success) or outline (e.g. outline-info, outline-success), including colors created in config-theme-colors. (optional, default "primary")
 
+    Requires CB's "array_count_uniq.rb" plugin!
+
 {%- endcomment -%}
 
-{%- if include.featured -%}
+{% if include.featured %}
 {% assign topTerms = include.featured | split: ";" %}
 {%- else -%}
+
 
 {% comment %} 
     Use termsField and termsMax to customize feature 
 {% endcomment %}
 {% assign termsField = include.field | default: "subject" %}
 {% assign termsMax = include.max | default: 5 %}
-
-{% comment %} 
-    Liquid below cleans and counts unique terms 
-{% endcomment %}
-{% assign rawTerms = site.data[site.metadata] | map: termsField | join: ";" | split: ";" %}
-{% capture terms %}{% for t in rawTerms %}{% if t != "" and t != " " %}{{ t | strip | downcase }};{% endif %}{% endfor %}{% endcapture %}
-{% assign terms = terms | split: ";" %}
-{% assign uniqueTerms = terms | uniq | sort %}
-{% capture termsCount %}{% for unique in uniqueTerms %}{% assign count = terms | where_exp: 'item', 'item == unique' | size %}{{ count | prepend: '0000' | slice: -4, 4 }}||{{ unique | capitalize }}{% unless forloop.last %};{% endunless %}{% endfor %}{% endcapture %}
-{% assign termsCount = termsCount | split: ";" | sort | reverse %}
+{% if site.data.theme.browse-child-objects == true %}
+{%- assign terms = site.data[site.metadata] | where_exp: 'item','item.objectid' | map: termsField | join: ";" -%}
+{% else %}
+{%- assign terms = site.data[site.metadata] | where_exp: 'item','item.parentid == nil' | map: termsField | join: ";" -%}
+{%- endif -%}
+{%- assign uniqTerms = terms | downcase | split: ";" | array_count_uniq -%}
 {% capture topTerms %}
-{% for i in termsCount limit: termsMax %}{{ i | split: "||" | last }};{% endfor %}{% endcapture %}
+{% for i in uniqTerms limit: termsMax %}{{ i[0] }};{% endfor %}{% endcapture %}
 {% assign topTerms = topTerms | split: ";" %}
 {%- endif -%}
 <div class="card mb-3">

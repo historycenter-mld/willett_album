@@ -1,15 +1,13 @@
-source "https://rubygems.org"
+# frozen_string_literal: true
 
-# gem "github-pages"
-#
-# Issue: github-pages Gem doesn't work with Ruby 3!
-# This Gemfile should include the line commented out above.
-# The lines below are added as a work around for Ruby 3.
-# If you are doing serious customization and need to keep in sync with github-pages versions,
-# Please use Ruby 2.7x,
-# uncomment gem "github-pages" 
-# and delete the lines below.
+source 'https://rubygems.org'
 
-gem "jekyll"
+unless Gem.win_platform?
+  gem 'image_optim'
+  gem 'image_optim_pack'
+end
+gem 'jekyll'
+gem 'mini_magick'
+gem 'rake'
 
-gem "webrick", "~> 1.7"
+gem 'webrick', '~> 1.7'

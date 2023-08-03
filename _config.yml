@@ -22,10 +22,10 @@ source-code: https://github.com/mldhistory/willett_album
 # title of site appears in banner
 title: Willett Family Photo Album
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: A 1921 journey from Massachusettes to Idaho in an early camper
+tagline: A 1921 journey from Massachusetts to Idaho in an early camper
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "The Willett family travels from Massachusettes in 1921 to visit their daughter in Meridian, Idaho."
+description: "The Willett family travels from Massachusetts in 1921 to visit their daughter in Meridian, Idaho."
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
 author: Meridian Library District History Center
 
